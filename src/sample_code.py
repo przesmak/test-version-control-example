@@ -29,12 +29,6 @@ def formulation_Custom(f_range, bb):
         psdi = psd
 
     func = interpolate.interp1d(fi, psdi)
-    #fr = np.arange(df, f_range[-1], df)
     phi = func(f_range)
-    # fig = plt.figure()
-    # plt.plot(fi,psdi,'-',f_range,phi,'o')
-    # plt.xlim([0, 200]) 
-    # plt.show()
-    # fig.savefig('psdinterp-check'+bendcolumn+'.png')
     
     return (Frms, phi)
