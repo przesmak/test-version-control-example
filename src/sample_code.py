@@ -1,3 +1,7 @@
+import numpy as np
+import pandas as pd
+
+
 def formulation_Custom(f_range, bb):
     #print("Using custom PSD")
     # load the dimensional PSD from     
