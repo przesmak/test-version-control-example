@@ -38,3 +38,12 @@ def formulation_Custom(f_range, bb):
     phi = func(f_range)
 
     return (Frms, phi)
+
+
+def new_function(param1: str, *param_list: list, **kwargs: dict) -> None:
+    """ New function doing nothing in particular"""
+    print(param1)
+    for item in param_list:
+        print(item)
+    for key, value in kwargs.values():
+        print(key, value)
