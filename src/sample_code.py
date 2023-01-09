@@ -3,9 +3,15 @@ import pandas as pd
 
 
 def formulation_Custom(f_range, bb):
-    #print("Using custom PSD")
-    # load the dimensional PSD from     
-    df=pd.read_excel('force-psds-custom.xlsx', sheet_name = 'Custom')
+    """
+    Custom function which do something 😁
+
+    - item 1
+    - item 2
+    - item 3
+
+    """
+    df = pd.read_excel('force-psds-custom.xlsx', sheet_name='Custom')
     freqs = pd.to_numeric(df['Frequency [Hz]'])
     if bb < 10:
         bendcolumn = 'b0' + str(bb+1)
